@@ -1,29 +1,3 @@
-//import org.openqa.selenium.WebDriver;
-//import org.openqa.selenium.chrome.ChromeDriver;
-//
-//public class EcommerceSignUp {
-//
-//    public static void main(String[] args) throws InterruptedException {
-//
-//        // 1 -
-//      String chromePath = System.getProperty("user.dir") + "\\src\\main\\resources\\chromedriver.exe\\";
-//      System.out.println(chromePath);
-//        System.setProperty("webdriver.chrome.driver", chromePath
-//                );
-//
-//        // 2 - New object
-//        WebDriver driver=new ChromeDriver();
-//
-//        // 3 - Navigate to ecommerce website
-//        String url="http://automationpractice.com/index.php";
-//        driver.navigate().to(url);
-//        driver.manage().window().maximize();
-//        Thread.sleep(3000);
-//
-//       // 4 - Close Driver
-//        driver.close();
-//    }
-//}
 
 import java.util.concurrent.TimeUnit;
 
@@ -62,7 +36,7 @@ public class EcommerceTest {
 
         // Create a new account user
         // Enter email address
-        driver.findElement(By.cssSelector("[name='email_create']")).sendKeys("salma@test.com");
+        driver.findElement(By.cssSelector("[name='email_create']")).sendKeys("dalida@test.com");
         // Click on "Create an account"
         driver.findElement(By.xpath("//button[@name=\"SubmitCreate\"]")).click();
         Thread.sleep(3000);
